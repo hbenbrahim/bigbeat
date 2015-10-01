@@ -1,0 +1,61 @@
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+/* Styling the carousel to occupy 100% screen space */
+
+.carousel,
+.item,
+.active {
+    height: 90%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Spacing and placing the carousel-indicators */
+
+carousel-indicators {
+    margin-left: 20px;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 112%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Fitting the navbar to the carousel */
+
+.navbar {
+  border-radius: 0px;
+  min-height: 10%;
+}
+
+/* Change the margin bottom so the caption and slide buttons don't get hidden by the navbar */
+.carousel-caption {
+    padding-bottom: 60px;
+}
+
+.carousel-indicators {
+  bottom: 50px;
+}
+
+/* Styling the Footer */
+footer {
+    margin: 50px 0;
+}
