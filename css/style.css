@@ -7,6 +7,7 @@
 html,
 body {
     height: 100%;
+    font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3";
 }
 
 /* Styling the carousel to occupy 100% screen space */
@@ -59,3 +60,28 @@ carousel-indicators {
 footer {
     margin: 50px 0;
 }
+
+/* Carousel animation change */
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1
+}
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* Carousel */
+
