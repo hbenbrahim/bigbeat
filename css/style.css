@@ -9,6 +9,17 @@ body {
     height: 100%;
     font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3";
     font-size: 20px;
+    background-color:#1f1f1f;
+}
+
+
+
+/* Styling the footer */
+
+footer{
+	border-top: 1px;
+    border-color: black;
+	color:#fff;
 }
 
 /* Styling the carousel to occupy 100% screen space */
@@ -84,6 +95,23 @@ footer {
   z-index: 2;
 }
 
+/* Styling the Carousel indicators */
+
+.carousel-indicators li {
+	background-color: rgba(0, 0, 0, 0.57);
+	width:20px;
+	height:20px;
+	margin-left:20px;
+	border:0;
+}
+
+.carousel-indicators .active {
+	background-color: #000;
+	width:20px;
+	height:20px;
+	margin-left:20px;
+}
+
 /* Review restyling */
 
 .review{
@@ -99,7 +127,7 @@ footer {
 }
 
 
-.review-thumbnail{
-	
+.review-lower-albums{
+	padding-top:17px;
 }
 
