@@ -114,6 +114,10 @@ footer {
 
 /* Review restyling */
 
+#review {
+	background-color:#FFFFFF;
+}
+
 .review{
 	padding-right:5px;
 	height: auto;
