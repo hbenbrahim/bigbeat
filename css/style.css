@@ -9,7 +9,9 @@ body {
     height: 100%;
     font-family: Helvetica,Arial,Verdana,"Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic Pro W3";
     font-size: 20px;
-    background-color:#1f1f1f;
+	background-color: #101010;
+	font: 14px/22px "ralewayregular", Helvetica Neue, Helvetica, Arial, sans-serif;
+	text-align: center;
 }
 
 
@@ -27,7 +29,7 @@ footer{
 .carousel,
 .item,
 .active {
-    height: 90%;
+    height: 93%;
 }
 
 .carousel-inner {
@@ -56,7 +58,8 @@ carousel-indicators {
 
 .navbar {
   border-radius: 0px;
-  min-height: 10%;
+  min-height: 7%;
+  margin-bottom:0px;
 }
 
 /* Change the margin bottom so the caption and slide buttons don't get hidden by the navbar */
@@ -112,12 +115,40 @@ footer {
 	margin-left:20px;
 }
 
+/* Deactivating standard carousel animations */
+
+.carousel-control.left {
+	background-image : none;
+}
+
+.carousel-control.right {
+	background-image : none;
+}
+
 /* Review restyling */
 
 #review {
-	background-color:#FFFFFF;
+	background-color:#FFC8C8;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
+/* Review thumbnail images animation */
+.review-thumbnail a img {
+	-webkit-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.review-thumbnail a img:hover {
+	/* Adding brightness for glow effect */
+	-webkit-filter: brightness(1.2);
+	-moz-filter: brightness(1.2);
+	-o-filter: brightness(1.2);	
+	filter: brightness(1.2);
+}
+
+/* Styling the rest all types of review */
 .review{
 	padding-right:5px;
 	height: auto;
@@ -134,4 +165,20 @@ footer {
 .review-lower-albums{
 	padding-top:17px;
 }
+
+/* Navbar scrolling effect */
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: blue;
+    }
+}
+
 
